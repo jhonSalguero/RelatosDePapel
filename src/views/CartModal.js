@@ -11,6 +11,9 @@ export const CartModal = () => {
   const [showThankYouModal, setShowThankYouModal] = useState(false); // Nuevo estado para el modal de gracias
   const navigate = useNavigate();
 
+  // Calcular el total
+  const total = cartItems.reduce((acc, item) => acc + item.price, 0).toFixed(2);
+
   const handlePurchase = () => {
     clearCart();
     setShowThankYouModal(true); // Mostrar el modal de agradecimiento
@@ -41,6 +44,12 @@ export const CartModal = () => {
               </li>
             ))}
           </ul>
+        )}
+        {/* Mostrar el total */}
+        {cartItems.length > 0 && (
+          <div className="total">
+            <p><strong>Total: ${total}</strong></p>
+          </div>
         )}
         <button onClick={handlePurchase} className="buy-button">
           Comprar
