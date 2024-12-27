@@ -1,0 +1,45 @@
+/* CartModalStyle.css */
+
+/* Estilo para el botón del carrito */
+.cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del ícono del carrito */
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, color 0.3s ease; /* Agregar transición suave */
+  }
+  
+  /* Efecto al pasar el mouse sobre el botón del carrito */
+  .cart-button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono del carrito */
+    color: #FFD700; /* Cambia el color del carrito a dorado */
+    cursor: pointer; /* Cambia el cursor a manito */
+  }
+  
+  /* Estilos del botón Eliminar */
+  .delete-button {
+    background: none;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    color: darkorange; /* Cambia el color del texto al pasar el mouse */
+  }
+  
+  /* Estilos del botón Comprar */
+  .buy-button {
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    color: darkgreen; /* Cambia el color del texto al pasar el mouse */
+  }
+  
