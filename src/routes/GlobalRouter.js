@@ -11,7 +11,7 @@ function GlobalRouter() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Landing />} />
-                <Route path="/restaurants" element={<Layout><Overview /></Layout>} />
+                <Route path="/index" element={<Layout><Overview /></Layout>} />
                 <Route path="/book/:id" element={<Layout><BookDetail /></Layout>} /> {/* Ruta para detalles del libro */}
                 <Route path="*" element={<Layout><NotFound /></Layout>} />
             </Routes>

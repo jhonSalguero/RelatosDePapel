@@ -6,7 +6,7 @@ const MenuComponent = () => {
     const navigate = useNavigate();  // Inicializamos useNavigate
 
     const handleHomeClick = () => {
-        navigate('/restaurants');  // Redirige a la página de inicio
+        navigate('/index');  // Redirige a la página de inicio
     };
 
     return (

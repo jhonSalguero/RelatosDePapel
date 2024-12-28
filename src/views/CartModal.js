@@ -19,7 +19,7 @@ export const CartModal = () => {
     setShowThankYouModal(true); // Mostrar el modal de agradecimiento
     setTimeout(() => {
       setShowThankYouModal(false); // Cerrar el modal después de 2 segundos
-      navigate("/restaurants"); // Redirigir a la vista de restaurantes
+      navigate("/index"); // Redirigir a la vista de restaurantes
     }, 2000); // Cerrar el modal después de 2 segundos
   };
 

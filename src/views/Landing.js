@@ -5,7 +5,7 @@ import '../styles/Landing.css';
 import myImagen from '../img/Logo.png';
 
 function Landing() {
-  const seconds = useCountdownRedirect('/restaurants', 5); // Redirige a /restaurants después de 5 segundos
+  const seconds = useCountdownRedirect('/index', 5); // Redirige a /index después de 5 segundos
 
   // Función para generar un color RGB aleatorio
   const generateRandomColor = () => {
@@ -23,7 +23,7 @@ function Landing() {
     <div className="landing">
       <img src={myImagen} alt="Logo" />
       {/* El Link ahora envuelve el título <h1> */}
-      <Link to="/restaurants">
+      <Link to="/index">
         <h1>Bienvenido a Relatos de Papel</h1>
       </Link>
 
