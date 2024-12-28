@@ -3,7 +3,7 @@
 /* Centra solo el texto del título */
 .header-footer-text {
     text-align: center;  /* Asegura que el texto esté centrado */
-    margin-bottom: 10px; /* Añade un poco de espacio entre el título y los botones */
+    margin-bottom: 5px; /* Añade un poco de espacio entre el título y los botones */
 }
 
 /* Contenedor principal para centrar el contenido */
