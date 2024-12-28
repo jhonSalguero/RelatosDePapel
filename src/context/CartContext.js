@@ -25,4 +25,5 @@ export const CartProvider = ({ children }) => {
     );
 };
 
+// Implementación de un custom hook a elección.
 export const useCart = () => useContext(CartContext);

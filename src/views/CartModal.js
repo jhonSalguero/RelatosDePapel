@@ -6,7 +6,7 @@ import ThankYouModal from "../components/ThankYouModal"; // Importa el component
 import '../styles/CartModalStyle.css'; // Asegúrate de importar el archivo de estilos
 
 export const CartModal = () => {
-  const { cartItems, removeFromCart, clearCart } = useCart();
+  const { cartItems, removeFromCart, clearCart } = useCart(); //Aquí, useCart se está utilizando para obtener el estado actual del carrito
   const [isOpen, setIsOpen] = useState(false);
   const [showThankYouModal, setShowThankYouModal] = useState(false); // Nuevo estado para el modal de gracias
   const navigate = useNavigate();
