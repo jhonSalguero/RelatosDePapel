@@ -42,6 +42,7 @@ export const Overview = () => {
                                             genre={book.genre}
                                             rating={book.rating}
                                             price={book.price} // Pasar el precio al componente Book
+                                            image={book.image} // Asegúrate de que `book.image` exista
                                         />
                                     </Link>
                                 </div>

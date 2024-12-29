@@ -9,7 +9,7 @@ const LinearProgressCustom = () => {
         if (progress < 100) {
             const interval = setInterval(() => {
                 setProgress(prev => Math.min(prev + 1, 100)); // Incrementa el progreso
-            }, 50);  // Cada 50ms aumenta un 1% de progreso
+            },10);  // Cada 10ms aumenta un 1% de progreso
             return () => clearInterval(interval); // Limpiar el intervalo cuando el componente se desmonte
         }
     }, [progress]);

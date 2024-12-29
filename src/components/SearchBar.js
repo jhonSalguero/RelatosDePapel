@@ -10,7 +10,7 @@ const SearchBar = ({ searchTerm, onSearchChange }) => {
                 type="text" 
                 value={searchTerm} 
                 onChange={onSearchChange} 
-                placeholder="Buscar por título..." 
+                placeholder="🔍 Buscar por título..." 
                 className="search-input"
             />
         </div>
