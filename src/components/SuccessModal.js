@@ -1,16 +1,25 @@
-import React from 'react';
-import './Modal.css';  // Si tu modal tiene estilos específicos
+// src/components/SuccessModal.js
+import React from "react";
+import "../styles.css/SuccessModal.css";
+import useSuccessModalEffect from "../hooks/SuccessModalEffect";
 
-const ThankYouModal = ({ isOpen }) => {
-  if (!isOpen) return null;
+const SuccessModal = ({ show, onClose }) => {
+  useSuccessModalEffect(show, onClose);
+
+  if (!show) return null;
 
   return (
-    <div className="thank-you-modal">
-      <div className="thank-you-modal-content">
-        <h2>Gracias por tu compra</h2>
+    <div className="modal-backdrop">
+      <div className="modal-container success-modal">
+        <img
+          src="https://media.tenor.com/0cvxil96K7YAAAAj/check.gif"
+          alt="Éxito"
+          className="success-icon"
+        />
+        <p>Libro añadido al carrito con éxito.</p>
       </div>
     </div>
   );
 };
 
-export default ThankYouModal;
+export default SuccessModal;

@@ -1,1 +1,0 @@
-.linear-progress-container{width:100%;background-color:#ccc;border-radius:25px;height:10px;overflow:hidden}.linear-progress-bar{height:100%;background-color:red;transition:width 0.1s ease-in-out}.linear-progress-bar{background:linear-gradient(to right,red,yellow,green)}

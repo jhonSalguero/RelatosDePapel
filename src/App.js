@@ -1,21 +1,31 @@
+// src/App.js
 import React from 'react';
-import GlobalRouter from "./routes/GlobalRouter";
-import { RestaurantContext } from "./context/RestaurantContext";
-import { Footer } from "./components/Footer";
-import { useRestaurants } from "./hooks/useRestaurants";
-import { CartProvider } from "./context/CartContext"; // CartProvider para manejar el carrito
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Cart from "./views/Cart";
+import Landing from './views/Landing';
+import BooksList from './views/BooksList';
+import BookDetails from './views/BookDetails';
+import Checkout from "./views/Checkout";
 
-function App() {
-    const restaurants = useRestaurants();
 
-    return (
-        <CartProvider>
-            <RestaurantContext.Provider value={{ restaurants }}>
-                <GlobalRouter />
-                <Footer />
-            </RestaurantContext.Provider>
-        </CartProvider>
-    );
-}
+
+const App = () => (
+  <Router>
+    <div className="app">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/books" element={<BooksList />} />
+        <Route path="/books/:id" element={<BookDetails />} />
+        <Route path="/checkout" element={<Cart />} />
+        <Route path="/payment" element={<Checkout />} />
+      </Routes>
+      
+    </div>
+    <Footer />
+  </Router>
+);
 
 export default App;
