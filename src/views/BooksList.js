@@ -18,7 +18,7 @@ const BooksList = () => {
   const { addToCart } = useCart();
 
   // URL de la API Gateway
-  const API_URL = "http://localhost:8762/ms-books-catalogue/api/books";
+  const API_URL = "https://ed7a-191-107-208-118.ngrok-free.app/ms-books-catalogue/api/books";
 
   // Cargar los libros desde la API con filtro visible=true
   useEffect(() => {
