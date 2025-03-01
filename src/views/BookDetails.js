@@ -13,7 +13,7 @@ const BookDetails = () => {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await fetch("http://localhost:8762/ms-books-catalogue/api/books", {
+        const response = await fetch("https://a5fa-186-154-211-109.ngrok-free.app/ms-books-catalogue/api/books", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
