@@ -17,7 +17,7 @@ const CheckoutForm = () => {
   const handlePayment = async () => {
     setLoading(true); // Deshabilita el botón mientras se procesa la compra
     try {
-      const response = await fetch("https://ed7a-191-107-208-118.ngrok-free.app/ms-books-payments/api/purchases/purchase", {
+      const response = await fetch("https://b35f-191-107-208-118.ngrok-free.app/ms-books-payments/api/purchases/purchase", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
